@@ -94,7 +94,7 @@ void loop(){
     display.setCursor(0, 0);
 
 // Display "Hello Dawson"
-    display.print("Hello Dawson");
+  //  display.print("Hello Dawson");
 
 // Update the display
     display.display();
