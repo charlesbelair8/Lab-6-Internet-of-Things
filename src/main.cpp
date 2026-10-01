@@ -97,6 +97,7 @@ void loop(){
     display.print("Hello Dawson");
 
 // Update the display
+    display.display();
 
 // Wait one second before the next loop iteration
     delay(1000);
