@@ -90,16 +90,29 @@ void loop(){
     // Clear the display
     display.clearDisplay();
 
-// Move the cursor to the top-left corner
+  // Move the cursor to the top-left corner
     display.setCursor(0, 0);
 
-// Display "Hello Dawson"
+  // Display "Hello Dawson"
   //  display.print("Hello Dawson");
 
-// Update the display
+  // Display the temperature, altitude, and pressure
+    display.print("Temperature: ");
+    display.print(temperature);
+    display.println(" C");
+
+    display.print("Altitude: ");
+    display.print(Altitude);
+    display.println(" m");
+
+    display.print("Pressure: ");
+    display.print(pressure);
+    display.println(" hPa");
+
+  // Update the display
     display.display();
 
-// Wait one second before the next loop iteration
+  // Wait one second before the next loop iteration
     delay(1000);
 
 }
