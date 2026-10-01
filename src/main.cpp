@@ -41,5 +41,8 @@ void loop(){
     Serial.print(Altitude);
     Serial.println(" m");
 
-
+  pressure = bmp.readPressure() / 100.0F; // Convert to hPa
+    Serial.print("Pressure: ");
+    Serial.print(pressure);
+    Serial.println(" hPa");
 }
