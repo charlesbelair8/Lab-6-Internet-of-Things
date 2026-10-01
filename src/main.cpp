@@ -5,6 +5,8 @@
 
 Adafruit_BMP280 bmp;
 float temperature;
+float Altitude;
+float pressure;
 
 void setup(){
   Serial.begin(9600);
@@ -33,5 +35,11 @@ void loop(){
     Serial.print(temperature);
     Serial.println(" C");
       delay(1000);
+    
+  Altitude = bmp.readAltitude(1013.25); // Use standard sea level pressure
+    Serial.print("Altitude: ");
+    Serial.print(Altitude);
+    Serial.println(" m");
+
 
 }
